@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-color: #FF005C;
+    --background-color-hover: #EE0158;
+    --text-color: #FFFFFF;
+    --text-color-hover: #FFFFFFBE;
+    --card-color: #1E1E1E75;
+}
+
+
+/* BACKGROUND */
+.screen {
+    background: url('../assets/imgs/background.svg') center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

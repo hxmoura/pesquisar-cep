@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    width: 250px;
+    height: 50px;
+}
+
+.logo-icon {
+    width: 100%;
+    margin-right: 5px;
+}
+
+.logo-description {
+    color: #FFFFFF;
+    font-weight: 900;
+    align-self: center;
+    letter-spacing: 5px;
+}
