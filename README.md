@@ -1,6 +1,6 @@
 # 💡 Pesquisar CEP
 
-<img src="preview.gif" alt="preview">
+<img src="preview.png" alt="preview">
 
 
 ## 📝 Sobre

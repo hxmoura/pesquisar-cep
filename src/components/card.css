@@ -20,7 +20,8 @@
     width: 30px;
 }
 
-.icon:hover {
+.icon:hover,
+.icon:active {
     background-color: var(--background-color-hover);
 }
 

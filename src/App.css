@@ -6,16 +6,14 @@
 
 :root {
     --background-color: #FF005C;
-    --background-color-hover: #EE0158;
+    --background-color-hover: #df0052;
     --text-color: #FFFFFF;
     --text-color-hover: #FFFFFFBE;
     --card-color: #1E1E1E75;
 }
 
-
-/* BACKGROUND */
 .screen {
-    background: url('../assets/imgs/background.svg') center center no-repeat;
+    background: url('./components/assets/imgs/background.svg') center center no-repeat;
     background-size: cover;
     min-height: 100vh;
 
@@ -23,4 +21,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-height: 700px) {
+    .screen {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }

@@ -15,14 +15,14 @@ export default function Card(props) {
         <div>
             <div className="card">
                 <div className="column">
-                    <CardItem icon={Location} click={() => copy('CEP')} id="CEP" value={props.cep} class="card-item space-b"/>
-                    <CardItem icon={City} click={() => copy('Cidade')} id="Cidade" value={props.cidade} class="card-item space-b"/>
-                    <CardItem icon={State} click={() => copy('Estado')} id="Estado" value={props.estado} class="card-item"/>
+                    <CardItem icon={Location} click={() => copy('CEP')} id="CEP" value={props.cep} class="card-item space-b" />
+                    <CardItem icon={City} click={() => copy('Cidade')} id="Cidade" value={props.cidade} class="card-item space-b" />
+                    <CardItem icon={State} click={() => copy('Estado')} id="Estado" value={props.estado} class="card-item" />
                 </div>
                 <div>
-                    <CardItem icon={DDD} click={() => copy('DDD')} id="DDD" value={props.ddd} class="card-item space-b space-t"/>
-                    <CardItem icon={District} click={() => copy('Bairro')} id="Bairro" value={props.bairro} class="card-item space-b"/>
-                    <CardItem icon={Street} click={() => copy('Logradouro')} id="Logradouro" value={props.logradouro} class="card-item"/>
+                    <CardItem icon={DDD} click={() => copy('DDD')} id="DDD" value={props.ddd} class="card-item space-b space-t" />
+                    <CardItem icon={District} click={() => copy('Bairro')} id="Bairro" value={props.bairro} class="card-item space-b" />
+                    <CardItem icon={Street} click={() => copy('Logradouro')} id="Logradouro" value={props.logradouro} class="card-item" />
                 </div>
             </div>
             <div className="copy">
