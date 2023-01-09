@@ -9,14 +9,13 @@
     --background-color-hover: #df0052;
     --text-color: #FFFFFF;
     --text-color-hover: #FFFFFFBE;
-    --card-color: #1E1E1E75;
+    --table-color: #1E1E1E75;
 }
 
 .screen {
-    background: url('./components/assets/imgs/background.svg') center center no-repeat;
+    background: url('./assets/imgs/background.svg') center center no-repeat;
     background-size: cover;
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,5 +26,139 @@
     .screen {
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+}
+
+
+
+/* LOGO */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-right: 5px;
+    stroke: var(--background-color);
+}
+
+.logo-text {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+@media(max-width: 350px) {
+    .logo-icon {
+        width: 40px;
+    }
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* INPUT SEARCH */
+.input-search {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin: 30px 20px 10px 20px;
+}
+
+.input {
+    background-color: var(--table-color);
+    min-width: 120px;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    border-radius: 20px 0px 0px 20px;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    backdrop-filter: blur(10px);
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+::placeholder {
+    color: var(--text-color-hover);
+}
+
+.btn-search {
+    min-width: 50px;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    outline: none;
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+.icon-search {
+    width: 25px;
+}
+
+.btn-search:hover,
+.btn-search:active {
+    background-color: var(--background-color-hover);
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+@media(max-width: 350px) {
+    .input {
+        font-size: .9rem;
+        padding: 0 10px;
+    }
+}
+
+
+
+/* TABLE */
+.table {
+    background-color: var(--table-color);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+}
+
+@media(max-width: 768px) {
+    .table {
+        display: block;
+    }
+}
+
+
+
+/* TEXT COPY */
+.copy {
+    display: flex;
+    justify-content: center;
+}
+
+.text-copy {
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: .9rem;
+    animation: flashing-text 2.5s linear infinite;
+}
+
+@keyframes flashing-text {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
