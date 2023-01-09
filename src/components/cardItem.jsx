@@ -1,5 +1,5 @@
 import React from 'react'
-import './Card.css'
+import './cardItem.css'
 import copy from '../copy/copy'
 
 export default function Card(props) {

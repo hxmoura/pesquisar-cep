@@ -10,7 +10,7 @@ import State from './assets/imgs/state.svg'
 import DDD from './assets/imgs/DDD.svg'
 import District from './assets/imgs/district.svg'
 import Street from './assets/imgs/street.svg'
-import Card from './components/Card'
+import Card from './components/cardItem'
 
 export default function Screen() {
 
