@@ -53,7 +53,7 @@ export default function Screen() {
             </section>
             <section className="input-search">
                 <input className="input" type="number" placeholder="Informe o CEP" onChange={e => setInput(e.target.value)} value={input} />
-                <button className="btn-search" onClick={() => search()} id="enter">
+                <button data-testId="btn-search" className="btn-search" onClick={() => search()} id="enter">
                     <img className="icon-search" src={Search} alt="search" />
                 </button>
             </section>
